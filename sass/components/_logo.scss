@@ -1,0 +1,12 @@
+.header-logo {
+    @include studio($black-elements);
+  }
+  .web-logo {
+    color: $accent-color;
+  }
+  .footer-logo {
+    @include studio($white-elements);
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }

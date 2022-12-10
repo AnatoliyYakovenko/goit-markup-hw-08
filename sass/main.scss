@@ -1,0 +1,19 @@
+@import "./base/normalize";
+@import "./base/reset";
+@import "./utils/vars";
+@import "./base/common";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/contacts";
+@import "./components/buttons";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";

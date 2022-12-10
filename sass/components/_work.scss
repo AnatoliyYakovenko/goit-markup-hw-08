@@ -1,0 +1,30 @@
+.work {
+    padding-top: 0;
+  }
+  .work__list {
+    display: flex;
+  }
+  .work__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .work__thumb {
+    position: relative;
+  }
+  .work__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-elements;
+    background: rgba(47, 48, 58, 0.8);
+  }
