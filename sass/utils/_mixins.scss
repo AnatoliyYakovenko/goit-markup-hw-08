@@ -5,3 +5,6 @@
     line-height: 1.19;
     color: $color;
 }
+@mixin flex-basis($gap, $num_items){
+    flex-basis:calc((100% - $gap * ($num_items - 1))/$num_items);
+}

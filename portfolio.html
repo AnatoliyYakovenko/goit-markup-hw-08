@@ -22,17 +22,22 @@
           <a href="./index.html" class="header-logo"
             ><span class="web-logo">Web</span>Studio</a
           >
+          <button type="button" class="mobile-btn js-open-menu">
+          <svg class="mobile-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#iconmenu"></use>
+          </svg>
+          </button>
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link">Студія</a>
+                <a
+                  href="./index.html"
+                  class="site-nav__link"
+                  >Студія</a
+                >
               </li>
               <li class="site-nav__item">
-                <a
-                  href="./portfolio.html"
-                  class="site-nav__link site-nav__link--current"
-                  >Портфоліо</a
-                >
+                <a href="./portfolio.html" class="site-nav__link  site-nav__link--current">Портфоліо</a>
               </li>
               <li class="site-nav__item">
                 <a href="#" class="site-nav__link">Контакти</a>
@@ -81,12 +86,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dtechnokryak.jpg 1x, ./images/dtechnokryak@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/ttechnokryak.jpg 1x, ./images/ttechnokryak@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/technokryak.jpg 1x, ./images/technokryak@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/technokryak.jpg"
-                  alt="ноутбук на якому відображається сайт з трьома контактами"
-                  width="370"
+                  alt="ноутбук на якому відображається сайт з трьома контактами" loading="lazy"
+                
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -102,12 +121,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dbasketball.jpg 1x, ./images/dbasketball@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tbasketball.jpg 1x, ./images/tbasketball@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/basketball.jpg 1x, ./images/basketball@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/basketball.jpg"
-                  alt="два баскетболісти змагаються за м'яч"
-                  width="370"
+                  alt="два баскетболісти змагаються за м'яч" loading="lazy"
+                  
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -125,12 +158,27 @@
           <li class="proects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dseafood.jpg 1x, ./images/dseafood@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tseafood.jpg 1x, ./images/tseafood@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
+              
                 <img
                   class="projects-card__img"
                   src="./images/seafood.jpg"
-                  alt="емблема ресторану сіфуд"
-                  width="370"
+                  alt="емблема ресторану сіфуд" loading="lazy"
+                  
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -146,12 +194,27 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dheadphones.jpg 1x, ./images/dheadphones@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/theadphones.jpg 1x, ./images/theadphones@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/headphones.jpg 1x, ./images/headphones@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
+              
                 <img
                   class="projects-card__img"
                   src="./images/headphones.jpg"
-                  alt="чорні навушники"
-                  width="370"
+                  alt="чорні навушники" loading="lazy"
+                  
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -167,12 +230,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dboxes.jpg 1x, ./images/dboxes@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tboxes.jpg 1x, ./images/tboxes@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/boxes.jpg"
-                  alt="дві коробки, одна білого кольору, інша крафтова"
-                  width="370"
+                  alt="дві коробки, одна білого кольору, інша крафтова" loading="lazy"
+               
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -188,12 +265,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dinspiration.jpg 1x, ./images/dinspiration@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tinspiration.jpg 1x, ./images/tinspiration@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/inspiration.jpg 1x, ./images/inspiration@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/inspiration.jpg"
-                  alt="комп'ютер, на якому зображений сайт"
-                  width="370"
+                  alt="комп'ютер, на якому зображений сайт" loading="lazy"
+                 
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -209,12 +300,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dmagazine.jpg 1x, ./images/dmagazine@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tmagazine.jpg 1x, ./images/tmagazine@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/magazine.jpg 1x, ./images/magazine@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/magazine.jpg"
-                  alt="журнал з написом - лімітована версія"
-                  width="370"
+                  alt="журнал з написом - лімітована версія" loading="lazy"
+                 
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -230,12 +335,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dlab.jpg 1x, ./images/dlab@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tlab.jpg 1x, ./images/tlab@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/lab.jpg"
-                  alt="бірка на мотузці, з написом "
-                  width="370"
+                  alt="бірка на мотузці, з написом " loading="lazy"
+                 
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -251,12 +370,26 @@
           <li class="projects-list__item">
             <a href="#" class="projects-list__link">
               <div class="projects-card">
+                <picture>
+                  <source  
+                 srcset="./images/dbusiness.jpg 1x, ./images/dbusiness@2x.jpg 2x"
+                 media="(min-width:1200px)"
+                  />
+                  <source  
+                  srcset="./images/tbusiness.jpg 1x, ./images/tbusiness@2x.jpg 2x"
+                  media="(min-width:768px)"
+                  />
+                  <source 
+                  srcset="./images/business.jpg 1x, ./images/business@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  />
                 <img
                   class="projects-card__img"
                   src="./images/business.jpg"
-                  alt="хтось друкує на ноутбуці, на якому відображається сайт"
-                  width="370"
+                  alt="хтось друкує на ноутбуці, на якому відображається сайт" loading="lazy"
+                  
                 />
+                </picture>
                 <div class="projects-card__overflow">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -273,9 +406,8 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__thumb">
-          <div class="footer-address">
+      <div class="footer__thumb container">
+        <div class="footer-address">
             <a class="footer-logo" href="./index.html"
               ><span class="web-logo">Web</span>Studio</a
             >
@@ -288,8 +420,8 @@
                 >+38 096 111 11 11</a
               >
             </address>
-          </div>
-          <div class="join">
+                      </div>
+                      <div class="join">
             <p class="footer-title">приєднуйтесь</p>
             <ul class="join__list">
               <li class="join__item">
@@ -318,33 +450,83 @@
               </li>
             </ul>
           </div>
-          <form
-            class="subscribe-form"
-            name="subscribe-form"
-            autocomplete="on"
-            novalidate
-          >
-            <p class="footer-title">Підпишіться на розсилку</p>
-            <div class="subscribe-wrap">
-              <input
-                class="subscribe-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-              <button class="subscribe-btn" type="submit">
-                Підписатися<svg
-                  class="subscribe-btn__icon"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </footer>
+        <form
+          class="subscribe-form"
+          name="subscribe-form"
+          autocomplete="on"
+          novalidate
+        >
+          <p class="footer-title">Підпишіться на розсилку</p>
+          <div class="subscribe-wrap">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn" type="submit">
+              Підписатися<svg
+                class="subscribe-btn__icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div> 
+  </footer>
+  <div class="mobile-menu js-menu-container">
+    <button class="mobile-close js-close-menu">
+      <svg class="mobile-close__icon" width="40" height="40">
+        <use href="./images/icons.svg#iconmenu-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__thumb">
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a
+        href="./index.html"
+        class="mobile-nav__link"
+        >Студія</a
+      >
+      </li>
+      <li class="mobile-nav__item">
+        <a href="./portfolio.html" class="mobile-nav__link  mobile-nav__link--current">Портфоліо</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Контакти</a>
+      </li>
+    </ul>
+    <ul class="mobile-contact">
+      <li class="mobile-contact__item">
+        <a href="tel:+380961111111" class="mobile-contact__link--phone"
+              >+38 096 111 11 11 </a>
+            </li>
+      <li class="mobile-contact__item">
+        <a href="mailto:info@devstudio.com" class="mobile-contact__link">info@devstudio.com </a>
+            </li>
+    </ul>
+    <ul class="mobile-social">
+      <li class="mobile-social__item">
+       <a href="#" class="mobile-social__link">Instagram</a><span class="mobile-social__decor">|</span> </li>
+      <li class="mobile-social__item">
+       <a href="#" class="mobile-social__link">Twitter</a><span class="mobile-social__decor">|</span> </li>
+      <li class="mobile-social__item">
+       <a href="#" class="mobile-social__link">Facebook</a><span class="mobile-social__decor">|</span> </li>
+      <li class="mobile-social__item">
+       <a href="#" class="mobile-social__link">LinkedIn</a> </li>
+    </ul>
+  </div>
+</div>
+<script 
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

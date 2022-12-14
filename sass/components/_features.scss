@@ -1,14 +1,27 @@
-.features__list {
-    display: flex;
-    flex-wrap: wrap;
+.features{
+
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+  &__item {
+  height: 226px;
+  @media  screen and (min-width: $tablet) {
+    @include flex-basis(30px, 2);
+  } 
+  @media  screen and (min-width: $desktop) {
+    @include flex-basis(30px, 4);
+
   }
-  .features__item {
-    width: 270px;
   }
-  .features__item:not(:last-child) {
-    margin-right: 30px;
+  &__item:not(:last-child) {
+    @media  screen and (max-width: $tablet) {
+    margin-bottom: 30px;
+    }
   }
-  .features__label {
+  &__label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,15 +30,20 @@
     background: #f5f4fa;
     border-radius: 4px;
   }
-  .features__title {
+  &__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media  screen and (max-width: $tablet) {
+      text-align: center;
+    }  
   }
-  .features__article {
+  &__article {
     font-size: 14px;
     line-height: 1.71;
     color: $secondary-color;
   }
+}

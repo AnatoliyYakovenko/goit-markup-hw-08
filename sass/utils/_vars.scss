@@ -1,3 +1,4 @@
+// Colors
 $primary-color: #212121;
 $secondary-color: #757575;
 $accent-color: #2196f3;
@@ -7,4 +8,11 @@ $team-background-color: #f5f4fa;
 $address-links-color: rgba(255, 255, 255, 0.6);
 $black-elements: #000000;
 $overflow-color: rgba(33, 150, 243, 0.9);
+
+// Animation
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Adaptive sizes
+$mobile: 479.98px;
+$tablet: 767.98px;
+$desktop: 1199.98px;

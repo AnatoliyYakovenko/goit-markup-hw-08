@@ -3,10 +3,19 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    @media  screen and (max-width: $tablet) {
+      display: none;
   }
+} 
   .site-nav__list {
     display: flex;
-    margin-left: 94px;
+    margin-left: 87px;
+    @media  screen and (max-width: $tablet) {
+      display: none;
+  }
+  @media  screen and (min-width: $desktop) {
+    margin-left: 92px;
+}
   }
   .site-nav__item:not(:last-child) {
     margin-right: 50px;

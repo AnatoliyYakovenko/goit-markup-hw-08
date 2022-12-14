@@ -6,14 +6,26 @@
     background-color: $white-elements;
   }
   section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
-  .container {
-    width: 1200px;
+   .container {
+    max-width: 480px;
     margin: 0 auto;
     padding-right: 15px;
-    padding-left: 15px;  
+    padding-left: 15px; 
+
+    @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+      } 
   }
   .center-title {
     margin-bottom: 50px;
@@ -21,4 +33,9 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
   }

@@ -1,40 +1,56 @@
 .team {
-    padding-top: 94px;
+    
     background-color: $team-background-color;
-  }
-  .team__list {
+ 
+  &__list {
     display: flex;
-    list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;  
+
+  @media  screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }  
   }
-  .team__item {
+  &__item {
+    width: 100%;
     background-color: $white-elements;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
+    @media  screen and (min-width: $tablet) {
+      @include flex-basis(30px, 2);
+    }
+    @media screen and (min-width: $desktop) {
+      @include flex-basis(30px, 4);
   }
-  .team__img {
-    margin-bottom: 30px;
-  }
-  .team__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .team-info{
-    margin-bottom: 30px;
+}
+}
+
+.team-info{
+    
+    padding-top: 30px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-  }
-  .team-info__member {
+
+    @media  screen and (min-width: $tablet) {
+      margin-bottom: 45px;
+    }
+  
+  &__member {
     margin-bottom: 10px;
     font-weight: 500;
-    
   }
-  .team-info__title {
+  &__title {
+    margin-bottom: 16px;
     color: $secondary-color;
   }
+}
   .social {
     margin-top: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -42,13 +58,12 @@
     align-items: center;
     width: 206px;
     height: 44px;
-  }
-
-  .social__item {
+  
+  &__item {
     width: 44px;
     height: 44px;
   }
-  .social__link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,14 +75,15 @@
     transition: color 250ms $cubic, background-color 250ms $cubic,
       border-color 250ms $cubic;
   }
-  .social__icon {
+  &__icon {
     margin: 0;
     padding: 0;
     fill: currentColor;
     }
-  .social__link:hover,
-  .social__link:focus{
+  &__link:hover,
+  &__link:focus{
     border-color: transparent;
     background-color: $accent-color;
     color: $white-elements;
+  }
   }

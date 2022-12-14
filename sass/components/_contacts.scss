@@ -11,9 +11,23 @@
   .header-contacts {
     display: flex;
     margin-left: auto;
+    @media  screen and (max-width: $tablet) {
+      display: none;
   }
-  .header-contacts__item:not(:last-child) {
-    margin-right: 50px;
+    @media  screen and (min-width: $tablet) {
+    margin-left: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media  screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: auto;
+  }
+
   }
   .header-contacts .contact:hover,
   .header-contacts .contact:focus {

@@ -18,11 +18,18 @@
 
   .buttons-list {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: center;
     padding-bottom: 50px;
     list-style: none;
     gap: 8px;
+
+    @media  screen and (min-width: $tablet) {
+      justify-content: center;
+      flex-wrap: nowrap;
+  }
+
   }
   .portfolio_btn {
     @extend %button-action;
@@ -56,13 +63,19 @@
     @extend %button-action;
     display: flex;
     align-items: center;
-    width: 200px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
     height: 50px;
     color: $white-elements;
     background-color: $accent-color;
     padding: 10px 28px;
-   
+    @media  screen and (min-width: $desktop) {
+      margin-top: 0;
   }
+}
   .subscribe-btn__icon {
     margin-left: 10px;
     fill: $white-elements;
@@ -110,4 +123,29 @@
   .modal-submit__btn:hover,
   .modal-submit__btn:focus{
     background-color: #188CE8;
+  }
+  .mobile-btn{
+
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+  }
+  }
+  .mobile-close__icon{
+    position: absolute;
+    top: 0;
+    right: 16px;
+    transition: fill 250ms $cubic;
+
+    &:hover,
+    &:focus{
+      fill: $accent-color;
+    }
+    @media screen and (min-width: $mobile) {
+      display: none;
+  }
   }
