@@ -622,7 +622,7 @@ img {
     margin-left: 165px;
   }
 }
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 1199.98px) {
   .join {
     margin-left: 0;
   }
@@ -718,7 +718,6 @@ img {
 }
 
 .subscribe-input {
-  max-width: 450 px;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -729,6 +728,16 @@ img {
   border-radius: 4px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 767.98px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .subscribe-input {
+    width: 358px;
+  }
 }
 
 .mobile-menu {

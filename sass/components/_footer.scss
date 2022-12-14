@@ -27,7 +27,7 @@
        margin-right: 0;
       margin-left: 165px;
      }
-    @media  screen and (min-width: $tablet) {
+    @media  screen and (min-width: $desktop) {
       margin-left: 0; }
      
     &__list {
@@ -115,7 +115,7 @@
     text-transform: uppercase;
   }
   .subscribe-input {
-    max-width: 450 px;
+    // min-width: 380px;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -126,6 +126,14 @@
      border-radius: 4px;
      background-color: transparent;
      color: rgba(255, 255, 255, 0.6);
+
+     @media  screen and (min-width: $tablet) {
+      width: 450px;
+  }
+  @media  screen and (min-width: $desktop) {
+    width: 358px;
+}
+   
 }
  
   
